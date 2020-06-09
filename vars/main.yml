@@ -10,4 +10,5 @@ apache_vhosts:
           ProxyPassMatch ^/(.*\.php(/.*)?)$ "fcgi://127.0.0.1:9000/var/www/html"
 php_enable_php_fpm: true
 php_packages_extra:
-  - libapache2-mod-fastcgi
+  - libapache2-mod-fcgid
+  # - libapache2-mod-fastcgi
